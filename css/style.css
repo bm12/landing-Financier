@@ -42,7 +42,7 @@ input:focus, textarea:focus{
     position: absolute;
 }
 .banner {
-	background: url(../img/sec-1-bg.jpg) no-repeat center;
+	background: #04151e url(../img/sec-1-bg.jpg) no-repeat center;
 	background-size: cover;
     height: 100%;
 	overflow: hidden;
