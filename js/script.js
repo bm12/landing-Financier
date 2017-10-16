@@ -46,6 +46,7 @@ $(document).ready(function() {
 			url: url,
 			data: dataSrlz,
 			success: function(data) {
+				console.log(data);
 				alert('Спасибо! Мы свяжемся с вами перед Бета-тестом.');
 				$('.modal__wrap').removeClass('opened');
 			}
