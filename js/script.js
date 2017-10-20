@@ -9,6 +9,7 @@ $(document).ready(function() {
 //        },
 		effect: 'coverflow',
 		pagination: '.swiper-pagination',
+		loop:true,
 
 		// Navigation arrows
 		nextButton: '.swiper-button-next',
@@ -22,6 +23,23 @@ $(document).ready(function() {
 	});
 	$('.swiper-button-prev').click(function(e) {
 		mySwiper.slidePrev();
+	});
+	$('body').on('keyup',function(e){
+		console.log( e );
+		if ( e.key === "ArrowRight"){
+			mySwiper.slideNext();
+		} else if (e.key === "ArrowLeft"){
+	   		mySwiper.slidePrev();
+	   	}
+	});
+	$('body').on('wheel',function(e){
+		console.log( e );
+		console.log( e.originalEvent.deltaY );
+		if (e.originalEvent.deltaY > 0){
+			mySwiper.slideNext();
+		} else if( e.originalEvent.deltaY < 0 ){
+	  		mySwiper.slidePrev();
+	  	}
 	});
 	
 	$('.btn-os').on('click',function(e){
