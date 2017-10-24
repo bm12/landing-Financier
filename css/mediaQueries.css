@@ -1,0 +1,25 @@
+@media (max-width:480px){
+	.banner section.row{
+		padding: 0 25px;
+	}
+	.swiper-button-next,
+	.swiper-button-prev{
+		width: 23px;
+		background-size: contain;
+	}
+	.swiper-button-next{
+		right: 3px;
+	}
+	.swiper-button-prev{
+		left: 3px;
+	}
+	.features{
+		overflow-y: auto;
+	}
+	.contacts__input-wrap {
+		margin-bottom: 15px;
+	}
+	.contacts__input-wrap:last-child {
+		margin-top: 15px;
+	}
+}
